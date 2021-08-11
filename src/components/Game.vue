@@ -9,7 +9,7 @@
       </div>
       <v-container>
         <v-row>
-          <v-col v-for="(item, ind) in plays" :key="ind" cols="12" sm="4">
+          <v-col v-for="(item, ind) in plays" :key="ind" cols="4">
             <board-space v-bind:move="item" v-bind:index="ind" @clicked="onButtonClick"/>
           </v-col>
         </v-row>
@@ -30,7 +30,7 @@
 import BoardSpace from './BoardSpace.vue';
 export default {
   components: { BoardSpace },
-  name: 'HelloWorld',
+  name: 'Game',
   props: {
     msg: String
   },
